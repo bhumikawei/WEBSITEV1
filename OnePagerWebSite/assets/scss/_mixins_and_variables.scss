@@ -1,0 +1,101 @@
+/* Variables */
+// Fonts
+$primary-font: 'Hero', Arial, sans-serif;
+
+// Styles
+$shadow: 1px 2px 4px rgba(0,0,0,.3);
+
+// Theme colors
+$highlight-primary-color: #398edb;
+$highlight-primary-color-hover: #005587;
+$highlight-secondary-color: #eb5a2d;
+$highlight-secondary-color-hover: #f04c1b;
+$highlight-tertiary-color: #ed1c24;
+$highlight-tertiary-color-hover: #c9302c;
+
+$dark-accent: #000;
+$light-accent: #fff;
+
+$light-gray: #575a5b;
+$medium-gray: #444;
+$dark-gray-1: #222;
+$dark-gray-2: #393d40;
+
+// Breakpoints
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+// Mixins
+@mixin box-sizing($value...) {
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    -ms-box-sizing: $value;
+    -o-box-sizing: $value;
+    box-sizing: $value;
+}
+
+@mixin background-size($value...) {
+    -webkit-background-size: $value;
+    -moz-background-size: $value;
+    -ms-background-size: $value;
+    background-size: $value;
+}
+
+@mixin border-radius($radius...) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin animation($value...) {
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    -ms-animation: $value;
+    -o-animation: $value;
+    animation: $value;
+}
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transforms...) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin text-shadow($shadow...) {
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+    -ms-text-shadow: $shadow;
+    -o-text-shadow: $shadow;
+    text-shadow: $shadow;
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin linear-gradient($direction: top, $fromColor, $percentFrom, $toColor, $percentTo) {
+  background-color: $fromColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor, $percentFrom), to($toColor, $percentTo)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient($direction, $fromColor $percentFrom, $toColor $percentTo); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient($direction, $fromColor $percentFrom, $toColor $percentTo); /* FF3.6 */
+  background-image:     -ms-linear-gradient($direction, $fromColor $percentFrom, $toColor $percentTo); /* IE10 */
+  background-image:      -o-linear-gradient($direction, $fromColor $percentFrom, $toColor $percentTo); /* Opera 11.10+ */
+  background-image:         linear-gradient($direction, $fromColor $percentFrom, $toColor $percentTo);
+  /*filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$fromColor', EndColorStr='$toColor');*/
+}
