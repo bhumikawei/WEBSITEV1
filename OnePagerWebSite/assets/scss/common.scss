@@ -12,3 +12,116 @@ body {
     font-family: $primary-font;
     font-size: 1.6rem;
 }
+
+/*TEXTS*/
+
+h1 {
+    font-size: 3.2rem;
+    color: $light-accent;
+}
+
+h2 {
+    font-size: 2.8rem;
+    color: #575a5b;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: #444;
+}
+h4 {
+    font-size: 2rem;
+    color: #000;
+}
+
+h5  {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+p {
+    margin: 0 0 15px;
+    font-size: 1.6rem;
+    color: #393d40;
+}
+
+a {
+    font-size: 1.6rem;
+    color: $highlight-primary-color;
+    text-decoration: none;
+    @include transition(all 0.5s linear);
+}
+
+/*LISTS*/
+
+ul, ol {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*BUTTONS*/
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 6px;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    color: $light-accent;
+    @include transition(all 0.3s linear);
+
+    @media screen and (min-width: $breakpoint-lg) {
+    padding : 15px 45px;
+    margin: 18px 6px 10px;
+}
+
+    &:hover {
+        @include box-shadow(inset 1px 1px 3px rgba(0, 0, 0, 0.7));
+        @include transition(all 0.3s linear);
+    }
+
+    &.blue-bcg {
+        background-color: $highlight-primary-color;
+
+        &:hover {
+            background-color: $highlight-primary-color-hover;
+        }
+    }
+
+    &.orange-bcg {
+        background-color: $highlight-secondary-color;
+
+        &:hover {
+            background-color: $highlight-secondary-color-hover;
+        }
+    }
+
+    .bcg-white {
+        background-color: $light-accent;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
