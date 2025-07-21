@@ -66,6 +66,8 @@ ul {
 /*BUTTONS*/
 button, input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   cursor: pointer;
   border: none;
 }
