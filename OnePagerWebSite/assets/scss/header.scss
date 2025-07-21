@@ -38,7 +38,7 @@
     top: 25%;
     right: 20px;
     background-color: transparent;
-    @include transform(translate(-50%));
+    @include transform(translateY(-50%));
     @include transition(all 0.3s ease-in-out);
     cursor: pointer;
 
@@ -69,11 +69,21 @@
         }
     }
 
-    &:active span {
-        &:nth-child(1) {
+    &.active span {
+        &:nth-child(1), &:nth-child(4) {
             width: 0%;
             top: 18px;
             left: 50%;
         }
+        &:nth-child(2) {
+            @include transform(rotate(45deg));
+        }
+
+        &:nth-child(3) {
+            @include transform(rotate(-45deg));
+        }
+
+        
+
     }
 }
