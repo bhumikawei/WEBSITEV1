@@ -180,7 +180,7 @@
         }
 
         &:hover, &.active {
-            color: $highlight-primary-color-hover;
+            color: #005587;
             @include transition(all 0.5s ease-in-out);
 
             &::before, &::after {
