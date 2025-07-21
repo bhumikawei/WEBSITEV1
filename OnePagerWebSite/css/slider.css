@@ -1,0 +1,38 @@
+/* Variables */
+.slider {
+  overflow: hidden;
+  max-height: 520px;
+  height: 520px;
+  position: relative;
+  margin-top: 60px;
+}
+.slider .slide {
+  max-height: 520px;
+  height: 520px;
+}
+.slider .slide img {
+  display: none;
+}
+
+.slide-text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.slide-title {
+  margin: 0;
+  font-size: 3.6rem;
+  color: #fff;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.slide-description {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
