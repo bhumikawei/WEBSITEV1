@@ -12,8 +12,22 @@
     @include box-shadow($shadow);
     @include linear-gradient(to bottom, #fff, 30%, #f5f5f5, 100%);
 
+
+    @media screen and (min-width: $breakpoint-lg) {
+        height: 80px;
+    }
+
     
 
+}
+
+.header-container {
+    @media screen and (min-width: $breakpoint-lg) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -22,6 +36,9 @@
     width: 75px;
     padding: 10px 0;
 
+    @media screen and (min-width: $breakpoint-lg) {
+        width: 110px;
+    }
 
 
     img {
@@ -86,20 +103,37 @@
 }
 
 .main-nav {
+    /*DISPLAY, VISIBILITY AND OVERFLOW PROPERTIES*/
     overflow: auto;
+
+    /*BOX MODEL PROPERTIES*/
     width: 320px;
     height: 100%;
     padding: 0;
 
+    /*POSITIONING PROPERTIES*/
     position: fixed;
     top: 60px;
     right: -100%;
     bottom: 0;
 
+    /*FONT PROPERTIES*/
     @include linear-gradient(to top, #fff, 30%, #f5f5f5,100%);
     @include box-shadow($shadow);
     @include transition(all 0.3s ease-in-out);
 
+
+    /*MEDIA QUERIES*/
+    @media screen and (min-width: $breakpoint-lg) {
+        overflow: visible;
+        width: auto;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+
+    /*SUB CLASSES AND EFFECTS*/
     &.active {
         right: 0;
         @include transition(all 0.3s ease-in-out);
@@ -118,6 +152,12 @@
         line-height: 22px;
         color: #444;
 
+
+            @media screen and (min-width: $breakpoint-lg) {
+            display: inline-block;
+            padding: 0 20px 8px;
+            border-bottom: none;
+        }
         &::before, &::after {
             content: "";
             opacity: 0;

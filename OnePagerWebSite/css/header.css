@@ -16,11 +16,30 @@
   background-image: linear-gradient(to bottom, #fff 30%, #f5f5f5 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$fromColor', EndColorStr='$toColor');*/
 }
+@media screen and (min-width: 992px) {
+  .header {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 
 .logo-link {
   display: block;
   width: 75px;
   padding: 10px 0;
+}
+@media screen and (min-width: 992px) {
+  .logo-link {
+    width: 110px;
+  }
 }
 .logo-link img {
   display: block;
@@ -77,14 +96,18 @@
 }
 
 .main-nav {
+  /*DISPLAY, VISIBILITY AND OVERFLOW PROPERTIES*/
   overflow: auto;
+  /*BOX MODEL PROPERTIES*/
   width: 320px;
   height: 100%;
   padding: 0;
+  /*POSITIONING PROPERTIES*/
   position: fixed;
   top: 60px;
   right: -100%;
   bottom: 0;
+  /*FONT PROPERTIES*/
   background-color: #fff; /* Fallback Color */ /* Saf4+, Chrome */ /* Chrome 10+, Saf5.1+, iOS 5+ */ /* FF3.6 */ /* IE10 */ /* Opera 11.10+ */
   background-image: linear-gradient(to top, #fff 30%, #f5f5f5 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$fromColor', EndColorStr='$toColor');*/
@@ -92,6 +115,17 @@
   -o-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
+  /*MEDIA QUERIES*/
+  /*SUB CLASSES AND EFFECTS*/
+}
+@media screen and (min-width: 992px) {
+  .main-nav {
+    overflow: visible;
+    width: auto;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 .main-nav.active {
   right: 0;
@@ -109,6 +143,13 @@
   text-transform: uppercase;
   line-height: 22px;
   color: #444;
+}
+@media screen and (min-width: 992px) {
+  .main-nav a {
+    display: inline-block;
+    padding: 0 20px 8px;
+    border-bottom: none;
+  }
 }
 .main-nav a::before, .main-nav a::after {
   content: "";
