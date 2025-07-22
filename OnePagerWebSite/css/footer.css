@@ -1,1 +1,13 @@
 /* Variables */
+.footer {
+  padding-top: 40px;
+}
+
+.accordian-toggle {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
