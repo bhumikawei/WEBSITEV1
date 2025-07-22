@@ -63,3 +63,40 @@
         width: 60%;
     }
 }
+
+/*ABOUT SECTION*/
+
+.about-author {
+    .quote {
+        margin-bottom: 15px;
+        padding: 30px 25px;
+        @include border-radius(12px);
+        background-color: #f5f5f5;
+        position: relative;
+    }
+
+    h4 {
+        margin: 0;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 20px;
+        color: #575a5b;
+    }
+
+    .fa {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        font-size: 1.4rem;
+        line-height: 28px;
+        column-rule: #d5d9da;
+
+        &.fa-quote-right {
+            top: auto;
+            left: auto;
+            right: 16px;
+            bottom: 16px;
+        }
+    }
+}
