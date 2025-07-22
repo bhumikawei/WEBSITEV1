@@ -52,3 +52,14 @@
         background-color: #575a5b;
     }
 }
+
+.section {
+    width: 100%;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-lg) {
+        width: 60%;
+    }
+}
