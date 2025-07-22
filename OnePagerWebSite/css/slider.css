@@ -1,28 +1,28 @@
 /* Variables */
-.slider {
-  overflow: hidden;
+.slider, .slide, .slides-container {
   max-height: 520px;
   height: 520px;
+}
+@media screen and (min-width: 992px) {
+  .slider, .slide, .slides-container {
+    /*(height/width)*100*/
+    height: 0;
+    padding-bottom: 27.0833333333%;
+  }
+}
+
+.slider {
+  overflow: hidden;
   position: relative;
   margin-top: 60px;
 }
 @media screen and (min-width: 992px) {
   .slider {
-    /*(height/width)*100*/
-    height: 0;
-    padding-bottom: 27.0833333333%;
     margin-top: 80px;
   }
 }
-.slider .slide {
-  max-height: 520px;
-  height: 520px;
-}
 @media screen and (min-width: 992px) {
   .slider .slide {
-    /*(height/width)*100*/
-    height: 0;
-    padding-bottom: 27.0833333333%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 100%;
@@ -30,6 +30,29 @@
 }
 .slider .slide img {
   display: none;
+}
+.slider .slick-prev {
+  left: 15px;
+}
+.slider .slick-next {
+  right: 15px;
+}
+.slider .slick-prev::before, .slider .slick-next::before {
+  font-size: 40px;
+}
+.slider .slick-prev, .slider .slick-next {
+  display: none;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .slider .slick-prev, .slider .slick-next {
+    display: block;
+  }
+}
+.slider .slick-dots {
+  bottom: 15px;
 }
 
 .slide-text-container {
