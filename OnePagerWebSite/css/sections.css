@@ -1,1 +1,60 @@
 /* Variables */
+/*COMMON SECTION STYLES*/
+.main-content {
+  width: 100%;
+  background-color: #f5f5f5;
+  -ms-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content-section, .banner-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.banner-section .section-heading, .banner-section .section-text {
+  color: #fff;
+  -webkit-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  -ms-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  -o-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.banner-section .section-heading::after {
+  background-color: #fff;
+}
+
+.anchor-target {
+  height: 1px;
+  position: absolute;
+  top: -60px;
+}
+@media screen and (min-width: 992px) {
+  .anchor-target {
+    top: -80px;
+  }
+}
+
+.section-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  position: relative;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #575a5b;
+}

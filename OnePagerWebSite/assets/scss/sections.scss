@@ -1,1 +1,54 @@
 @import '_mixins_and_variables.scss';
+/*COMMON SECTION STYLES*/
+.main-content {
+    width: 100%;
+    background-color: #f5f5f5;
+    @include box-shadow($shadow);
+}
+.content-section, .banner-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.banner-section {
+    .section-heading, .section-text {
+        color: $light-accent;
+        @include text-shadow($shadow);
+    }
+    .section-heading::after {
+        background-color: $light-accent;
+    }
+}
+
+.anchor-target {
+    height: 1px;
+    position: absolute;
+    top: -60px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+        top: -80px;
+    }
+}
+
+.section-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    position: relative;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #575a5b;
+    }
+}
