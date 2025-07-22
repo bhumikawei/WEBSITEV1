@@ -42,6 +42,7 @@
   margin-bottom: 20px;
   padding-bottom: 16px;
   position: relative;
+  font-size: 2.8rem;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
@@ -59,14 +60,14 @@
   background-color: #575a5b;
 }
 
-.section {
+.section-text {
   width: 100%;
   margin: 0 auto 20px;
   font-size: 1.8rem;
   text-align: center;
 }
 @media screen and (min-width: 992px) {
-  .section {
+  .section-text {
     width: 60%;
   }
 }
@@ -84,7 +85,7 @@
   font-style: italic;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 20px;
+  line-height: 26px;
   color: #575a5b;
 }
 .about-author .fa {
@@ -101,4 +102,37 @@
   left: auto;
   right: 16px;
   bottom: 16px;
+}
+.about-author .author {
+  margin-bottom: 15px;
+  position: relative;
+  text-align: right;
+}
+.about-author .author .info {
+  padding-left: 100px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #242a30;
+}
+.about-author .author small {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -moz-columns: #999;
+       columns: #999;
+}
+.about-author .image {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  position: absolute;
+  left: -10px;
+  top: -50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.about-author .image img {
+  max-width: 100%;
+  border-radius: 50%;
 }

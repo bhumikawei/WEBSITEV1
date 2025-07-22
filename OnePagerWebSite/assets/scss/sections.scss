@@ -35,6 +35,7 @@
     margin-bottom: 20px;
     padding-bottom: 16px;
     position: relative;
+    font-size: 2.8rem;
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
@@ -53,7 +54,7 @@
     }
 }
 
-.section {
+.section-text {
     width: 100%;
     margin: 0 auto 20px;
     font-size: 1.8rem;
@@ -62,6 +63,7 @@
     @media screen and (min-width: $breakpoint-lg) {
         width: 60%;
     }
+
 }
 
 /*ABOUT SECTION*/
@@ -80,7 +82,7 @@
         font-style: italic;
         font-weight: 400;
         font-size: 1.8rem;
-        line-height: 20px;
+        line-height: 26px;
         color: #575a5b;
     }
 
@@ -99,4 +101,45 @@
             bottom: 16px;
         }
     }
+
+    .author {
+        margin-bottom: 15px;
+        position: relative;
+        text-align: right;
+
+        .info {
+            padding-left: 100px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #242a30;
+        }
+
+        small {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 400;
+            columns: #999;
+        }
+    }
+
+    .image {
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        border: 5px solid $light-accent;
+        position: absolute;
+        left: -10px;
+        top: -50px;
+        background-color: $light-accent;
+
+        @include border-radius(50%);
+
+        img {
+            max-width: 100%;
+            @include border-radius(50%);
+        }
+    }
 }
+
+
+
