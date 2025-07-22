@@ -11,3 +11,27 @@
   background-color: none;
   cursor: pointer;
 }
+.accordian-toggle .fa {
+  float: right;
+  padding-top: 10px;
+}
+.accordian-toggle .fa-chevron-circle-left {
+  display: none;
+}
+.accordian-toggle.active .fa-chevron-circle-down {
+  display: none;
+}
+.accordian-toggle.active .fa-chevron-circle-left {
+  display: block;
+}
+
+.accordian-title {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #343434;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 40px;
+}
