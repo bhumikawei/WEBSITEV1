@@ -77,7 +77,7 @@
   margin-bottom: 15px;
   padding: 30px 25px;
   border-radius: 12px;
-  background-color: #f5f5f5;
+  background-color: rgba(212, 209, 209, 0.7215686275);
   position: relative;
 }
 .about-author h4 {
