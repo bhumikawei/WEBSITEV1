@@ -81,3 +81,20 @@
 .logo-container img {
   margin-bottom: 15px;
 }
+
+.footer-nav, .footer-copyright-text {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  display: inline-block;
+  padding: 0 6px;
+  color: #444;
+  font-size: 1.4rem;
+  border-bottom: 1px solid transparent;
+}
+.footer-nav a:hover, .footer-nav a.active {
+  border-bottom: 1px solid #ed1c24;
+  transition: all 0.3s linear;
+}
