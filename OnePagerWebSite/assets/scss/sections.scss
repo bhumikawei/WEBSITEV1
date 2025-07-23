@@ -157,3 +157,22 @@
     }
 }
 
+/*TECH SECTION*/
+
+.tech-section {
+    background: transparent url(/WEBSITEV1/OnePagerWebSite/assets/images/slide-image-1.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
+.tech-card {
+    padding: 20px 0;
+    text-align: center;
+
+    h3 {
+        margin-top: 10px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $light-accent;
+        @include text-shadow($shadow);
+    }
+}

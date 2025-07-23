@@ -151,3 +151,25 @@
   color: #398edb;
   line-height: 70px;
 }
+
+/*TECH SECTION*/
+.tech-section {
+  background: transparent url(/WEBSITEV1/OnePagerWebSite/assets/images/slide-image-1.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.tech-card {
+  padding: 20px 0;
+  text-align: center;
+}
+.tech-card h3 {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  -ms-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  -o-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
