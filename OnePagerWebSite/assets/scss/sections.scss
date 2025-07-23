@@ -4,7 +4,7 @@
 /*COMMON SECTION STYLES*/
 .main-content {
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: #e4e0e0;
     @include box-shadow($shadow);
 }
 .content-section, .banner-section {
@@ -69,7 +69,9 @@
 }
 
 /*ABOUT SECTION*/
-
+.about-section {
+    background-color: #fff;
+}
 .about-author {
     .quote {
         margin-bottom: 15px;
@@ -143,5 +145,15 @@
     }
 }
 
+/*SERVICES SECTION*/
+.info-card {
+    padding: 20px 0;
+    text-align: center;
 
+    .fa {
+        font-size: 6rem;
+        color: $highlight-primary-color;
+        line-height: 70px;
+    }
+}
 
