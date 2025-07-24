@@ -71,16 +71,16 @@
 //     })
 // }
 
-$(document).ready(function() {
+$(document).ready(function(){
     initNavigation();
 
     $('.slides-container').slick({
         arrows: true,
         dots: true,
         autoplay: true
-    })
+    });
 })
-function initNavigation() {
+function initNavigation(){
     //declaration and init of variables
     var navToggle = $('.nav-icon');
     var mainNav = $('.main-nav');
@@ -88,17 +88,17 @@ function initNavigation() {
     var anchorLinks = $('.anchor-link');
 
 
-    navToggle.click(function() {
+    navToggle.click(function(){
         $(this).toggleClass('active');
         mainNav.toggleClass('active');
     })
 
-    accordianToggle.click(function() {
+    accordianToggle.click(function(){
         $(this).toggleClass('active');
         $(this).parent().find('.accordian-content').toggleClass('active');
     })
 
-    anchorLinks.click(function(e) {
+    anchorLinks.click(function(e){
         e.preventDefault();
         var anchorId = $(this).attr('href');
         var targetElement = $(anchorId);
@@ -108,6 +108,7 @@ function initNavigation() {
             scrollTop: parseInt(targetElement.offset().top)
         }, animationDuration, 'swing');
     })
+    
     $('.back-to-top, .logo-link').click(function(e) {
         e.preventDefault();
         var animationDuration = 1000;
