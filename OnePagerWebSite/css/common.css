@@ -93,16 +93,16 @@ button, input[type=button], input[type=reset], input[type=submit] {
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.7);
   transition: all 0.3s linear;
 }
-.btn.blue-bcg {
+.btn.btn-primary {
   background-color: #398edb;
 }
-.btn.blue-bcg:hover {
+.btn.btn-primary:hover {
   background-color: #005587;
 }
-.btn.orange-bcg {
+.btn.btn-secondary {
   background-color: #eb5a2d;
 }
-.btn.orange-bcg:hover {
+.btn.btn-secondary:hover {
   background-color: #f04c1b;
 }
 .btn .bcg-white {

@@ -95,7 +95,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         @include transition(all 0.3s linear);
     }
 
-    &.blue-bcg {
+    &.btn-primary {
         background-color: $highlight-primary-color;
 
         &:hover {
@@ -103,7 +103,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         }
     }
 
-    &.orange-bcg {
+    &.btn-secondary {
         background-color: $highlight-secondary-color;
 
         &:hover {
