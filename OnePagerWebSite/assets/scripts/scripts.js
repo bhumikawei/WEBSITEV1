@@ -83,4 +83,29 @@ function initNavigation() {
         $(this).toggleClass('active');
         mainNav.toggleClass('active');
     })
+
+    accordianToggle.click(function() {
+        $(this).toggleClass('active');
+        $(this).parent().find('.accordian-content').toggleClass('active');
+    })
+
+    anchorLinks.click(function(e) {
+        e.preventDefault();
+        var anchorId = $(this).attr('href');
+        var targetElement = $(anchorId);
+        var animationDuration = 1000;
+
+        $('html, body').animate({
+            scrollTop: parseInt(targetElement.offset().top)
+        }, animationDuration, swing);
+    })
+    $('.back-to-top, .logo-link').click(function(e) {
+        e.preventDefault();
+        var animationDuration = 1000;
+
+        $('html, body').animate({
+            scrollTop: parseInt(targetElement.offset().top)
+        }, animationDuration, swing);
+        
+    })
 }
