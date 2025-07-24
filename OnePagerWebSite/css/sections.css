@@ -189,4 +189,7 @@
   height: 0;
   padding-bottom: 100%;
   position: relative;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
 }
