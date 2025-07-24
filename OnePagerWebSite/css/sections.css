@@ -278,3 +278,11 @@ textarea.form-control {
 .input-validation-error {
   border-color: #ed1c24;
 }
+
+.field-validation-error {
+  color: #ed1c24;
+}
+
+.company-info h5 {
+  margin: 15px 0;
+}
