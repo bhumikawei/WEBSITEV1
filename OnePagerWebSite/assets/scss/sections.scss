@@ -252,3 +252,37 @@
         color: $light-accent;
     }
 }
+
+/*CONTACT SECTION*/
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    color: #262626;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 6px;
+    padding: 10px 4px 10px 6px;
+    border: 1px solid $highlight-primary-color;
+    @include border-radius(3px);
+    background-color: $light-accent;
+    color: #393d40;
+
+}
+
+textarea.form-control {
+    height: 150px;
+}
+
+.input-validation-error {
+    border-color: $highlight-tertiary-color;
+    
+}
