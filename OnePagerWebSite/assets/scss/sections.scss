@@ -295,3 +295,17 @@ textarea.form-control {
     margin: 15px 0;
 
 }
+
+.list-inline {
+    li {
+        display: inline-block;
+    }
+
+    a {
+        &:hover, &.active {
+            .fa {
+                color: $highlight-primary-color-hover;
+            }
+        }
+    }
+}

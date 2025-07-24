@@ -286,3 +286,10 @@ textarea.form-control {
 .company-info h5 {
   margin: 15px 0;
 }
+
+.list-inline li {
+  display: inline-block;
+}
+.list-inline a:hover .fa, .list-inline a.active .fa {
+  color: #005587;
+}
