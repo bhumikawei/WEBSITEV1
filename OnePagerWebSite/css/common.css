@@ -120,3 +120,23 @@ button, input[type=button], input[type=reset], input[type=submit] {
 .text-right {
   text-align: right;
 }
+
+.to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 500;
+}
+.to-top .back-to-top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding-top: 6px;
+  font-size: 3rem;
+  text-align: center;
+  -moz-columns: white;
+       columns: white;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0.7;
+}
